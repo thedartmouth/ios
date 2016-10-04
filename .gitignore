@@ -1,0 +1,9 @@
+# adapted from https://gist.github.com/muhasturk/19684c884142a3eb0b63
+.DS_Store
+.Trashes
+*.swp
+*~.nib
+DerivedData/
+build/
+.pbxuser
+*.pbxuser
