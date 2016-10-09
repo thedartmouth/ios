@@ -19,7 +19,7 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Loading news")
-        let url:NSURL = NSURL(string: "http://www.thedartmouth.com/servlet/feed/news")!
+        let url:NSURL = NSURL(string: "http://www.thedartmouth.com/servlet/feed/the-dartmouth-articles-feed")!
         parser = XMLParser(contentsOf: url as URL)!
         parser.delegate = self
         parser.parse()
@@ -55,6 +55,14 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
             post.postTitle = postTitle
             post.postLink = postLink
             posts.append(post)
+        }
+    }
+    
+    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "viewarticle" {
+            let post: Post = posts[tableView.indexPathForSelectedRow!.row]
+            let viewController = segue.destination as! ArticleViewController
+            viewController.articleLink = post.postLink
         }
     }
 

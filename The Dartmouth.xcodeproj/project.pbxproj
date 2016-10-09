@@ -13,6 +13,7 @@
 		1E4C607C1DA4365D00BA5FC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4C607A1DA4365D00BA5FC2 /* LaunchScreen.storyboard */; };
 		1E4C60841DA438ED00BA5FC2 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C60831DA438ED00BA5FC2 /* NewsTableViewController.swift */; };
 		1E4C60861DA43A4F00BA5FC2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C60851DA43A4F00BA5FC2 /* Post.swift */; };
+		1E4C60881DAAEFBB00BA5FC2 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C60871DAAEFBB00BA5FC2 /* ArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1E4C607D1DA4365D00BA5FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E4C60831DA438ED00BA5FC2 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		1E4C60851DA43A4F00BA5FC2 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1E4C60871DAAEFBB00BA5FC2 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1E4C607D1DA4365D00BA5FC2 /* Info.plist */,
 				1E4C60831DA438ED00BA5FC2 /* NewsTableViewController.swift */,
 				1E4C60851DA43A4F00BA5FC2 /* Post.swift */,
+				1E4C60871DAAEFBB00BA5FC2 /* ArticleViewController.swift */,
 			);
 			path = "The Dartmouth";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E4C60861DA43A4F00BA5FC2 /* Post.swift in Sources */,
+				1E4C60881DAAEFBB00BA5FC2 /* ArticleViewController.swift in Sources */,
 				1E4C60841DA438ED00BA5FC2 /* NewsTableViewController.swift in Sources */,
 				1E4C60721DA4365D00BA5FC2 /* AppDelegate.swift in Sources */,
 			);

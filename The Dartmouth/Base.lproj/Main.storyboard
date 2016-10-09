@@ -22,6 +22,9 @@
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="dAD-7o-pSC" kind="show" identifier="viewarticle" id="4qp-3T-nIj"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,7 +36,40 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgv-xX-VXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1220" y="-341.37931034482762"/>
+            <point key="canvasLocation" x="1150" y="-341"/>
+        </scene>
+        <!--Article View Controller-->
+        <scene sceneID="FLJ-eC-gA8">
+            <objects>
+                <viewController id="dAD-7o-pSC" customClass="ArticleViewController" customModule="The_Dartmouth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t9r-QA-o8h"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ny6-4x-QXo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kt3-HJ-l7h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wPG-RZ-DCs">
+                                <frame key="frameInset" minY="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Oic-aA-0Yo">
+                                <frame key="frameInset" minX="177" minY="355" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Oic-aA-0Yo" id="l1Z-IU-grJ"/>
+                        <outlet property="webView" destination="wPG-RZ-DCs" id="k8e-tP-tYy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqR-Q7-vvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2044" y="-342.27886056971516"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ykE-l7-7aC">
