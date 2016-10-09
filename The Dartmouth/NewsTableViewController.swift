@@ -58,7 +58,8 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
         }
     }
     
-    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Preparing for segue!")
         if segue.identifier == "viewarticle" {
             let post: Post = posts[tableView.indexPathForSelectedRow!.row]
             let viewController = segue.destination as! ArticleViewController
